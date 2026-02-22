@@ -16,6 +16,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/print.css" media="print">
+    <style>
+        /* Hero text forced white — overrides Pico.css in all modes */
+        .hero, .hero p, .hero h1, .hero h2, .hero h3,
+        .hero .hero-subtitle, .hero .hero-meta, .hero .hero-context {
+            color: #ffffff !important;
+        }
+        .hero .hero-email { color: rgba(255,255,255,0.85) !important; }
+        .hero-actions a[role="button"]:not(.outline) { color: #1a2332 !important; }
+        .hero-actions a[role="button"].outline { color: #ffffff !important; }
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
