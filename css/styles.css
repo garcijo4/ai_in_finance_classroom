@@ -145,6 +145,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5rem 1.5rem 4rem;
     background: linear-gradient(135deg, var(--color-navy) 0%, #2563eb 100%);
     color: #ffffff !important;
+    --pico-color: #ffffff;
+    --pico-h1-color: #ffffff;
+    --pico-h2-color: #ffffff;
+    --pico-h3-color: #ffffff;
 }
 
 [data-theme="dark"] .hero {
