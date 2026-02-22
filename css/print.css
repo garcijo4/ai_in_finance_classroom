@@ -1,0 +1,65 @@
+/* Print stylesheet */
+@media print {
+    .site-header,
+    .theme-toggle,
+    .back-to-top,
+    .filter-bar,
+    .sidebar-nav,
+    .copy-btn,
+    .hero-actions,
+    .app-nav {
+        display: none !important;
+    }
+
+    .hero {
+        background: none !important;
+        color: #000 !important;
+        padding: 1rem 0 !important;
+    }
+
+    .hero h1,
+    .hero-subtitle,
+    .hero-meta,
+    .hero-context {
+        color: #000 !important;
+        opacity: 1 !important;
+    }
+
+    .app-layout {
+        display: block !important;
+    }
+
+    details {
+        open: true;
+    }
+
+    details[open] summary {
+        margin-bottom: 0.5rem;
+    }
+
+    .ranking-card,
+    .prompt-card,
+    .pilot-box,
+    .skill-card,
+    .methodology-card,
+    .quickstart-card,
+    .prompt-library-card {
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+    }
+
+    a {
+        color: #000 !important;
+        text-decoration: underline !important;
+    }
+
+    body {
+        font-size: 11pt;
+    }
+
+    .prompt-card pre {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+}

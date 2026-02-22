@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 AI Applications for Finance Classroom Instruction</title>
+    <meta name="description" content="Implementation guide with ready-to-use prompts for integrating AI into finance courses. By John Garcia, California Lutheran University.">
+    <meta property="og:title" content="Top 10 AI Applications for Finance Classroom Instruction">
+    <meta property="og:description" content="Implementation guide with ready-to-use prompts for integrating AI into finance courses. By John Garcia, Cal Lutheran University.">
+    <meta property="og:url" content="https://garcijo4.github.io/ai_in_finance_classroom/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <nav class="container">
+            <ul>
+                <li><a href="index.html" class="nav-brand"><strong>AI in Finance</strong></a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="prompts.html">Prompt Library</a></li>
+                <li><a href="quick-start.html">Quick Start</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+                        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Top 10 AI Applications for<br>Finance Classroom Instruction</h1>
+                <p class="hero-subtitle">Implementation Guide</p>
+                <p class="hero-meta">John Garcia &middot; Assistant Professor of Finance &amp; Analytics<br>California Lutheran University, School of Management</p>
+                <p class="hero-context">Companion resource for the Southwestern Finance Association Annual Meeting &middot; March 2026</p>
+                <div class="hero-actions">
+                    <a href="applications.html" role="button">Explore All 10 Applications</a>
+                    <a href="quick-start.html" role="button" class="outline">Quick Start Guides</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Use -->
+        <section class="container section-padded">
+            <h2>How to Use This Guide</h2>
+            <p>Each application entry follows a consistent structure with complete implementation details, including student and instructor workflows, sample prompts ready for immediate use, assessment rubrics, and concrete first-week pilot instructions. Start with the <a href="quick-start.html">Quick Start Guides</a> for the fastest path to trying an application. The <a href="prompts.html">Prompt Library</a> lets you copy any prompt with one click.</p>
+
+            <h3>Adoption Difficulty Tags</h3>
+            <div class="difficulty-legend">
+                <div class="difficulty-item">
+                    <span class="badge badge--beginner">Beginner</span>
+                    <p>No prior AI experience needed. Faculty can adopt immediately with free tools.</p>
+                </div>
+                <div class="difficulty-item">
+                    <span class="badge badge--intermediate">Intermediate</span>
+                    <p>Some familiarity with AI tools is assumed. May require prompt engineering skills.</p>
+                </div>
+                <div class="difficulty-item">
+                    <span class="badge badge--advanced">Advanced</span>
+                    <p>Requires technical comfort, API access, or infrastructure investment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ranking Table -->
+        <section class="container section-padded">
+            <h2>Top 10 Ranked Applications</h2>
+
+            <div class="filter-bar">
+                <span class="filter-label">Filter by difficulty:</span>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+            </div>
+
+            <div class="ranking-grid">
+                <a href="applications.html#app-1" class="ranking-card" data-difficulty="intermediate">
+                    <span class="rank">#1</span>
+                    <div class="ranking-card-content">
+                        <h3>Simulated C-Suite / Client Role-Play</h3>
+                        <span class="badge badge--intermediate">Intermediate</span>
+                        <p>Students practice high-stakes professional interactions with AI personas that provide realistic pushback and adapt difficulty dynamically.</p>
+                    </div>
+                </a>
+
+                <a href="applications.html#app-2" class="ranking-card" data-difficulty="beginner">
+                    <span class="rank">#2</span>
+                    <div class="ranking-card-content">
+                        <h3>AI-Assisted Formative Feedback on Student Writing</h3>
+                        <span class="badge badge--beginner">Beginner</span>
+                        <p>AI generates structured first-pass critique aligned to your rubric, cutting turnaround time by 40-50% while improving feedback specificity.</p>
+                    </div>
+                </a>
+
+                <a href="applications.html#app-3" class="ranking-card" data-difficulty="beginner">
+                    <span class="rank">#3</span>
+                    <div class="ranking-card-content">
+                        <h3>AI Socratic Tutor for Foundational Concepts</h3>
+                        <span class="badge badge--beginner">Beginner</span>
+                        <p>Always-available, infinitely patient tutoring assistants that use Socratic questioning to guide understanding of TVM, WACC, bond pricing, and more.</p>
+                    </div>
+                </a>
+
+                <a href="applications.html#app-4" class="ranking-card" data-difficulty="intermediate">
+                    <span class="rank">#4</span>
+                    <div class="ranking-card-content">
+                        <h3>AI-Aware Assessment Design</h3>
+                        <span class="badge badge--intermediate">Intermediate</span>
+                        <p>Redesign assessments to emphasize process documentation, assumption justification, interpretation, and oral verification.</p>
+                    </div>
+                </a>
+
+                <a href="applications.html#app-5" class="ranking-card" data-difficulty="intermediate">
+                    <span class="rank">#5</span>
+                    <div class="ranking-card-content">
+                        <h3>AI-Powered Financial Data Analysis &amp; Visualization</h3>
+                        <span class="badge badge--intermediate">Intermediate</span>
+                        <p>Students describe analyses in natural language and receive working code with executed output, shifting focus to interpretation.</p>
+                    </div>
+                </a>
+
+                <a href="applications.html#app-6" class="ranking-card" data-difficulty="beginner">
+                    <span class="rank">#6</span>
+                    <div class="ranking-card-content">
+                        <h3>Content Generation: Exam Variants, Cases &amp; Materials</h3>
+                        <span class="badge badge--beginner">Beginner</span>
+                        <p>AI drafts problem-set variants, mini cases, discussion questions, and accreditation documentation. Faculty serve as editors and curators.</p>
+                    </div>
+                </a>
+
+                <a href="applications.html#app-7" class="ranking-card" data-difficulty="beginner">
+                    <span class="rank">#7</span>
+                    <div class="ranking-card-content">
+                        <h3>Real-Time Market Context &amp; Case Enhancement</h3>
+                        <span class="badge badge--beginner">Beginner</span>
+                        <p>AI with web search provides real-time market context to keep case studies current and connect classroom theory to live markets.</p>
+                    </div>
+                </a>
+
+                <a href="applications.html#app-8" class="ranking-card" data-difficulty="intermediate">
+                    <span class="rank">#8</span>
+                    <div class="ranking-card-content">
+                        <h3>Coding Assistance &amp; &ldquo;Vibe Coding&rdquo; for Financial Modeling</h3>
+                        <span class="badge badge--intermediate">Intermediate</span>
+                        <p>Students describe financial logic in natural language, AI generates code, and students verify, annotate, modify, and interpret the output.</p>
+                    </div>
+                </a>
+
+                <a href="applications.html#app-9" class="ranking-card" data-difficulty="beginner">
+                    <span class="rank">#9</span>
+                    <div class="ranking-card-content">
+                        <h3>AI Literacy &amp; Critical Evaluation of AI Outputs</h3>
+                        <span class="badge badge--beginner">Beginner</span>
+                        <p>Students explicitly test, evaluate, and critique AI outputs on finance topics, building professional skepticism as a habit.</p>
+                    </div>
+                </a>
+
+                <a href="applications.html#app-10" class="ranking-card" data-difficulty="advanced">
+                    <span class="rank">#10</span>
+                    <div class="ranking-card-content">
+                        <h3>Simulation, Monte Carlo &amp; Scenario Analysis</h3>
+                        <span class="badge badge--advanced">Advanced</span>
+                        <p>AI dramatically lowers the barrier to creating sophisticated financial simulations: Monte Carlo projections, option pricing, and stress tests.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Methodology -->
+        <section class="container section-padded">
+            <h2>Ranking Methodology</h2>
+            <p>The ranking reflects three weighted criteria applied systematically to the evidence base:</p>
+            <div class="methodology-grid">
+                <div class="methodology-card">
+                    <div class="methodology-weight">40%</div>
+                    <h3>Instructional Impact</h3>
+                    <p>How significantly does the application address a core teaching pain point in finance? Applications developing multiple skill categories rank higher.</p>
+                </div>
+                <div class="methodology-card">
+                    <div class="methodology-weight">35%</div>
+                    <h3>Feasibility</h3>
+                    <p>How quickly can a faculty member with moderate technology comfort adopt this? Applications requiring only a smartphone and a free AI account rank higher.</p>
+                </div>
+                <div class="methodology-card">
+                    <div class="methodology-weight">25%</div>
+                    <h3>Evidence</h3>
+                    <p>Applications referenced across multiple repository sources with named institutional adopters and published studies rank higher.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download -->
+        <section class="container section-padded download-section">
+            <h2>Download Resources</h2>
+            <div class="download-grid">
+                <a href="assets/docs/Top_10_AI_Applications.pdf" class="download-card" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                    <h3>Full Implementation Guide</h3>
+                    <p>Complete PDF with all 10 applications, prompts, rubrics, and references.</p>
+                </a>
+                <a href="assets/docs/AI_in_Finance_Classroom_SFA_Presentation.pdf" class="download-card" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><rect x="8" y="12" width="8" height="6"/><line x1="8" y1="15" x2="16" y2="15"/></svg>
+                    <h3>SWFA Presentation Slides</h3>
+                    <p>Companion slide deck for the high-level overview.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 John Garcia, California Lutheran University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>.</p>
+            <p>Southwestern Finance Association Annual Meeting &middot; March 2026</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

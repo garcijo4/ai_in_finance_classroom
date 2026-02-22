@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Start Guides - AI in Finance Classroom</title>
+    <meta name="description" content="First-week implementation pilots for all 10 AI applications. Get started in 10 minutes or less.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <nav class="container">
+            <ul>
+                <li><a href="index.html" class="nav-brand"><strong>AI in Finance</strong></a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="prompts.html">Prompt Library</a></li>
+                <li><a href="quick-start.html" class="active">Quick Start</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+                        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Quick Start Guides</h1>
+                <p>First-week implementation pilots for every application. Each one requires minimal setup and can be tried in 10 minutes or less.</p>
+            </div>
+
+            <div class="filter-bar">
+                <span class="filter-label">Filter by difficulty:</span>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+            </div>
+
+            <!-- #1 -->
+            <div class="quickstart-card" data-difficulty="intermediate">
+                <div class="quickstart-card__header">
+                    <span class="rank">#1</span>
+                    <h3>Simulated C-Suite / Client Role-Play</h3>
+                    <span class="badge badge--intermediate">Intermediate</span>
+                </div>
+                <p>Use a standard ChatGPT or Claude session (no custom bot needed). Give students this one-paragraph scenario and prompt:</p>
+                <div class="prompt-card">
+                    <div class="prompt-card__header">
+                        <h4>Quick Role-Play Prompt</h4>
+                        <button class="copy-btn" data-copy-target="qs-prompt-1" aria-label="Copy prompt to clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                    <pre><code id="qs-prompt-1">You are a skeptical CFO at a manufacturing company. I am a junior analyst about to pitch a $30M warehouse expansion. My NPV analysis shows $4.2M positive NPV at a 10% discount rate. Push back on my assumptions-especially the 6% revenue growth rate and the choice of discount rate. Be tough but fair.</code></pre>
+                </div>
+                <p>Have students do a 5-minute interaction on their phones during class and submit 3 bullet points: (1) the toughest objection, (2) how they responded, (3) what they would do differently.</p>
+                <div class="quickstart-card__footer">
+                    <span class="pilot-box__time">Total class time: 10 minutes</span>
+                    <a href="applications.html#app-1">Read full application &rarr;</a>
+                </div>
+            </div>
+
+            <!-- #2 -->
+            <div class="quickstart-card" data-difficulty="beginner">
+                <div class="quickstart-card__header">
+                    <span class="rank">#2</span>
+                    <h3>AI-Assisted Formative Feedback on Student Writing</h3>
+                    <span class="badge badge--beginner">Beginner</span>
+                </div>
+                <p>Pick one assignment you are grading this week. Paste one student's submission and your rubric into ChatGPT or Claude. Use this prompt:</p>
+                <div class="prompt-card">
+                    <div class="prompt-card__header">
+                        <h4>Quick Feedback Prompt</h4>
+                        <button class="copy-btn" data-copy-target="qs-prompt-2" aria-label="Copy prompt to clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                    <pre><code id="qs-prompt-2">Evaluate this submission using the attached rubric. For each category, provide a score, one strength with a quote, one weakness with a quote, and one actionable suggestion.</code></pre>
+                </div>
+                <p>Compare the AI's draft to what you would have written. Edit it, add your personal touch, and return it. Track your time&mdash;most faculty report saving 15-25 minutes per submission on first use.</p>
+                <div class="quickstart-card__footer">
+                    <span class="pilot-box__time">Time investment: 15-25 minutes saved per submission</span>
+                    <a href="applications.html#app-2">Read full application &rarr;</a>
+                </div>
+            </div>
+
+            <!-- #3 -->
+            <div class="quickstart-card" data-difficulty="beginner">
+                <div class="quickstart-card__header">
+                    <span class="rank">#3</span>
+                    <h3>AI Socratic Tutor for Foundational Concepts</h3>
+                    <span class="badge badge--beginner">Beginner</span>
+                </div>
+                <p>Create a half-page handout with 2 prompt templates: one Socratic tutor for your course's most-struggled concept (e.g., TVM, bond pricing, WACC) and one practice problem generator. Distribute it next class. Ask students to try one problem with the AI tutor before the next session and bring a screenshot of one exchange.</p>
+                <p>Spend 5 minutes debriefing: &ldquo;How many found an error in the AI's response? What worked well? What didn't?&rdquo;</p>
+                <div class="quickstart-card__footer">
+                    <span class="pilot-box__time">Zero technology setup required</span>
+                    <a href="applications.html#app-3">Read full application &rarr;</a>
+                </div>
+            </div>
+
+            <!-- #4 -->
+            <div class="quickstart-card" data-difficulty="intermediate">
+                <div class="quickstart-card__header">
+                    <span class="rank">#4</span>
+                    <h3>AI-Aware Assessment Design</h3>
+                    <span class="badge badge--intermediate">Intermediate</span>
+                </div>
+                <p>Take one existing exam problem from your current course. Add two interpretation questions that AI cannot easily answer:</p>
+                <ol>
+                    <li>&ldquo;What does this NPV result mean for the firm's strategic decision&mdash;should they proceed, and why?&rdquo;</li>
+                    <li>&ldquo;Identify the single assumption that, if changed, would most likely reverse your recommendation. Explain why.&rdquo;</li>
+                </ol>
+                <p>No technology, no setup, no AI account needed. This alone shifts the assessment toward evaluative judgment.</p>
+                <div class="quickstart-card__footer">
+                    <span class="pilot-box__time">No setup required</span>
+                    <a href="applications.html#app-4">Read full application &rarr;</a>
+                </div>
+            </div>
+
+            <!-- #5 -->
+            <div class="quickstart-card" data-difficulty="intermediate">
+                <div class="quickstart-card__header">
+                    <span class="rank">#5</span>
+                    <h3>AI-Powered Financial Data Analysis &amp; Visualization</h3>
+                    <span class="badge badge--intermediate">Intermediate</span>
+                </div>
+                <p>Download a free CSV of monthly Fama-French factor returns from Kenneth French's data library (mba.tuck.dartmouth.edu). Upload it to ChatGPT Code Interpreter with this prompt:</p>
+                <div class="prompt-card">
+                    <div class="prompt-card__header">
+                        <h4>Quick Data Analysis Prompt</h4>
+                        <button class="copy-btn" data-copy-target="qs-prompt-5" aria-label="Copy prompt to clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                    <pre><code id="qs-prompt-5">Calculate the average monthly return and standard deviation for the market factor, SMB, and HML. Display as a bar chart with error bars.</code></pre>
+                </div>
+                <p>Show the result in class (takes 30 seconds). Ask students: &ldquo;What would you need to check to trust these numbers?&rdquo; Debrief in 3 minutes. No coding knowledge required.</p>
+                <div class="quickstart-card__footer">
+                    <span class="pilot-box__time">Total class time: ~5 minutes</span>
+                    <a href="applications.html#app-5">Read full application &rarr;</a>
+                </div>
+            </div>
+
+            <!-- #6 -->
+            <div class="quickstart-card" data-difficulty="beginner">
+                <div class="quickstart-card__header">
+                    <span class="rank">#6</span>
+                    <h3>Content Generation: Exam Variants, Cases &amp; Materials</h3>
+                    <span class="badge badge--beginner">Beginner</span>
+                </div>
+                <p>Open ChatGPT right now. Paste this prompt:</p>
+                <div class="prompt-card">
+                    <div class="prompt-card__header">
+                        <h4>Quick Bond Problem Generator</h4>
+                        <button class="copy-btn" data-copy-target="qs-prompt-6" aria-label="Copy prompt to clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                    <pre><code id="qs-prompt-6">Generate 3 variants of a bond pricing problem for Principles of Finance. Each should use a different coupon rate (4%, 6%, 8%), different maturity (5, 10, 20 years), and different YTM (3%, 5%, 7%). Include answer keys.</code></pre>
+                </div>
+                <p>Compare the output to your existing problem set. Edit the best variant for your next quiz.</p>
+                <div class="quickstart-card__footer">
+                    <span class="pilot-box__time">Total time: 10-15 minutes</span>
+                    <a href="applications.html#app-6">Read full application &rarr;</a>
+                </div>
+            </div>
+
+            <!-- #7 -->
+            <div class="quickstart-card" data-difficulty="beginner">
+                <div class="quickstart-card__header">
+                    <span class="rank">#7</span>
+                    <h3>Real-Time Market Context &amp; Case Enhancement</h3>
+                    <span class="badge badge--beginner">Beginner</span>
+                </div>
+                <p>Before your next case discussion, post this 5-minute pre-class task:</p>
+                <div class="prompt-card">
+                    <div class="prompt-card__header">
+                        <h4>Pre-Class Case Update Task</h4>
+                        <button class="copy-btn" data-copy-target="qs-prompt-7" aria-label="Copy prompt to clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                    <pre><code id="qs-prompt-7">Open ChatGPT or Perplexity. Ask: What has happened to [Case Company] since [case year]? Find one development that would change the case analysis. Verify it with one primary source (10-K, earnings transcript, or press release). Bring your finding to class.</code></pre>
+                </div>
+                <p>Open class by having 2-3 students share their updates. Debrief: &ldquo;How many verified what the AI told you? What did you find when you checked?&rdquo;</p>
+                <div class="quickstart-card__footer">
+                    <span class="pilot-box__time">Zero setup required</span>
+                    <a href="applications.html#app-7">Read full application &rarr;</a>
+                </div>
+            </div>
+
+            <!-- #8 -->
+            <div class="quickstart-card" data-difficulty="intermediate">
+                <div class="quickstart-card__header">
+                    <span class="rank">#8</span>
+                    <h3>Coding Assistance &amp; &ldquo;Vibe Coding&rdquo;</h3>
+                    <span class="badge badge--intermediate">Intermediate</span>
+                </div>
+                <p>In class, open ChatGPT or Claude and type:</p>
+                <div class="prompt-card">
+                    <div class="prompt-card__header">
+                        <h4>Quick PV Coding Demo</h4>
+                        <button class="copy-btn" data-copy-target="qs-prompt-8" aria-label="Copy prompt to clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                    <pre><code id="qs-prompt-8">Write Python code to calculate the present value of $10,000 received in 5 years at a 7% annual discount rate. Show the formula in a comment.</code></pre>
+                </div>
+                <p>Display the result (15 seconds). Then ask students: &ldquo;What would you need to change if there were also annual $500 coupon payments?&rdquo; Have a student describe the change in plain English. Paste their description into the AI. Display the updated code. Debrief: &ldquo;The AI wrote it&mdash;how would you verify it's correct?&rdquo;</p>
+                <div class="quickstart-card__footer">
+                    <span class="pilot-box__time">Total time: 8 minutes</span>
+                    <a href="applications.html#app-8">Read full application &rarr;</a>
+                </div>
+            </div>
+
+            <!-- #9 -->
+            <div class="quickstart-card" data-difficulty="beginner">
+                <div class="quickstart-card__header">
+                    <span class="rank">#9</span>
+                    <h3>AI Literacy &amp; Critical Evaluation</h3>
+                    <span class="badge badge--beginner">Beginner</span>
+                </div>
+                <p><strong>The 2-Minute AI Audit</strong> (works with zero preparation):</p>
+                <p>In class, tell every student to open any AI tool on their phone. Ask them a finance question they know the answer to cold&mdash;something from last week's lecture. They have exactly 2 minutes to find at least one error or imprecision in the AI's response.</p>
+                <p>Quick show of hands: How many found an error? What kinds of errors? This exercise takes 5 minutes total, requires zero setup, immediately demonstrates that AI is accessible and fallible, and establishes AI as a tool to be audited rather than trusted blindly. Do it on day one of any course.</p>
+                <div class="quickstart-card__footer">
+                    <span class="pilot-box__time">Total time: 5 minutes, zero preparation</span>
+                    <a href="applications.html#app-9">Read full application &rarr;</a>
+                </div>
+            </div>
+
+            <!-- #10 -->
+            <div class="quickstart-card" data-difficulty="advanced">
+                <div class="quickstart-card__header">
+                    <span class="rank">#10</span>
+                    <h3>Simulation, Monte Carlo &amp; Scenario Analysis</h3>
+                    <span class="badge badge--advanced">Advanced</span>
+                </div>
+                <p><strong>Zero-infrastructure demonstration:</strong> Open ChatGPT Code Interpreter in class. Type:</p>
+                <div class="prompt-card">
+                    <div class="prompt-card__header">
+                        <h4>Coin Flip Convergence Demo</h4>
+                        <button class="copy-btn" data-copy-target="qs-prompt-10" aria-label="Copy prompt to clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                    <pre><code id="qs-prompt-10">Simulate 1,000 coin flips. Plot the running average after each flip. Add a horizontal line at 0.5.</code></pre>
+                </div>
+                <p>Result appears in 15 seconds. Show the convergence. Then say: &ldquo;Now imagine this, but instead of coin flips, these are annual stock returns. And instead of a running average, we are tracking a retirement account balance. That is a Monte Carlo simulation.&rdquo;</p>
+                <p>This 60-second demo plants the conceptual seed for simulation thinking with zero technical barrier. For the next class, provide a pre-built Colab notebook link where students can modify 3 parameters (allocation, withdrawal rate, time horizon) and re-run.</p>
+                <div class="quickstart-card__footer">
+                    <span class="pilot-box__time">Total time: ~2 minutes</span>
+                    <a href="applications.html#app-10">Read full application &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 John Garcia, California Lutheran University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>.</p>
+            <p>Southwestern Finance Association Annual Meeting &middot; March 2026</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
