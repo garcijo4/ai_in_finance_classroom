@@ -155,7 +155,6 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
 }
 
-.hero *,
 .hero p,
 .hero h1,
 .hero h2,
@@ -211,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-actions a[role="button"]:not(.outline) {
     background: #ffffff;
-    color: var(--color-accent);
+    color: #1a2332 !important;
 }
 
 .hero-actions a[role="button"]:not(.outline):hover {
@@ -221,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-actions a[role="button"].outline {
     background: transparent;
     border: 2px solid #ffffff;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .hero-actions a[role="button"].outline:hover {
