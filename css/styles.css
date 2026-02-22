@@ -144,17 +144,24 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 5rem 1.5rem 4rem;
     background: linear-gradient(135deg, var(--color-navy) 0%, #2563eb 100%);
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 [data-theme="dark"] .hero {
     background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
 }
 
+.hero *,
+.hero p,
+.hero h1,
+.hero h2,
+.hero h3 {
+    color: #ffffff !important;
+}
+
 .hero h1 {
     font-size: clamp(1.75rem, 4vw, 2.75rem);
     margin-bottom: 0.5rem;
-    color: #ffffff;
     line-height: 1.2;
 }
 
@@ -163,25 +170,22 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.9;
     margin-bottom: 1rem;
     font-weight: 600;
-    color: #ffffff;
 }
 
 .hero-meta {
     font-size: 1rem;
     opacity: 0.85;
     margin-bottom: 0.5rem;
-    color: #ffffff;
 }
 
 .hero-context {
     font-size: 0.9rem;
     opacity: 0.7;
     margin-bottom: 2rem;
-    color: #ffffff;
 }
 
 .hero-email {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.85) !important;
     text-decoration: underline;
     text-underline-offset: 2px;
 }
