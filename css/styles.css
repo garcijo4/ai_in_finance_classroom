@@ -677,6 +677,52 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
 }
 
+/* ===== App Tagline ===== */
+.app-tagline {
+    font-size: 1.05rem;
+    color: var(--color-muted);
+    font-style: italic;
+    margin: 0.25rem 0 1.75rem;
+    line-height: 1.5;
+}
+
+/* ===== Rubric Weights List ===== */
+.rubric-weights {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 1rem;
+}
+
+.rubric-weights li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.9rem;
+    gap: 1rem;
+}
+
+.rubric-weights li:last-child {
+    border-bottom: none;
+}
+
+.rubric-weights .criterion {
+    flex: 1;
+}
+
+.rubric-weights .weight {
+    font-weight: 700;
+    color: var(--color-accent);
+    white-space: nowrap;
+}
+
+/* ===== Skill Card Category Accents ===== */
+.skill-card:nth-child(1) { border-top: 3px solid #2563eb; }
+.skill-card:nth-child(2) { border-top: 3px solid #10b981; }
+.skill-card:nth-child(3) { border-top: 3px solid #8b5cf6; }
+.skill-card:nth-child(4) { border-top: 3px solid #f59e0b; }
+
 /* ===== Risks (details/summary) ===== */
 .risk-item {
     margin-bottom: 0.5rem;
@@ -686,7 +732,8 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     font-weight: 600;
     font-size: 0.95rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.25rem 0.5rem 0.6rem;
+    border-left: 3px solid #f59e0b;
 }
 
 .risk-item p {
