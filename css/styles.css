@@ -21,12 +21,14 @@
 }
 
 [data-theme="dark"] {
+    --pico-color: #e2e8f0;
+    --pico-background-color: #0f172a;
     --color-navy: #e2e8f0;
     --color-surface: #0f172a;
     --color-card: #1e293b;
     --color-muted: #94a3b8;
     --color-border: #334155;
-    --color-code-bg: #1e293b;
+    --color-code-bg: #152032;
     --color-pilot-bg: #1e293b;
 }
 
@@ -99,11 +101,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
     white-space: nowrap;
     transition: background 0.2s;
+    color: inherit;
 }
 
 .site-header nav ul li a:hover,
 .site-header nav ul li a.active {
     background: var(--color-pilot-bg);
+}
+
+[data-theme="dark"] .site-header nav ul li a:hover,
+[data-theme="dark"] .site-header nav ul li a.active {
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .nav-brand {
@@ -167,6 +175,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
     opacity: 0.7;
     margin-bottom: 2rem;
+}
+
+.hero-email {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .hero-actions {
@@ -452,6 +466,11 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     font-family: inherit;
     font-size: inherit;
+}
+
+[data-theme="dark"] .prompt-card pre,
+[data-theme="dark"] .prompt-card code {
+    color: #e2e8f0;
 }
 
 /* ===== Copy Button ===== */

@@ -105,7 +105,7 @@ function showCopySuccess(btn) {
                     card.classList.remove('hidden');
                 } else {
                     var difficulty = card.getAttribute('data-difficulty');
-                    if (difficulty && difficulty.indexOf(filter) !== -1) {
+                    if (difficulty && difficulty === filter) {
                         card.classList.remove('hidden');
                     } else {
                         card.classList.add('hidden');
