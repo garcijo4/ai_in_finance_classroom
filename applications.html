@@ -154,13 +154,17 @@
                     <h3>Evidence from the Repository</h3>
                     <details>
                         <summary>View evidence and supporting research</summary>
-                        <p>Bowen &amp; Watson (2025, 2nd ed.) significantly expand treatment of AI role-play and custom bot simulations. Greene (AACSB, 2025) documents the Skills/Replacement/Complement three-part framework at Clemson University. Tamoyan et al. (2025, ACL Workshop) found AI role-play indistinguishability rates up to 44% in user studies. HBS custom tutor bots reported 75% student usage with highly positive feedback. Research in social work education (arXiv, 2025) shows AI agents can effectively scaffold empathy and communication skills.</p>
+                        <p>Bowen &amp; Watson (2025, 2nd ed.) significantly expand treatment of AI role-play and custom bot simulations. Greene (AACSB, 2025) documents the Skills/Replacement/Complement three-part framework at Clemson University. Tamoyan et al. (2025, ACL Workshop) found AI role-play indistinguishability rates up to 44% — meaning nearly half of participants could not distinguish the AI persona from a human respondent, supporting the fidelity of well-prompted bots. HBS custom tutor bots reported 75% student usage with highly positive feedback. Research in social work education (arXiv, 2025) shows AI agents can effectively scaffold empathy and communication skills in professional practice scenarios.</p>
                     </details>
 
                     <h3>Risks and Safeguards</h3>
                     <details class="risk-item">
                         <summary>Hallucination</summary>
                         <p>Bot may cite incorrect financial data or break character. Mitigation: test every bot extensively before deployment; require students to flag moments where the bot seemed unrealistic.</p>
+                    </details>
+                    <details class="risk-item">
+                        <summary>Character Break</summary>
+                        <p>Even well-prompted AI personas can suddenly switch tone, volunteer answers unprompted, or exit the role. Mitigation: conduct at least 10 test exchanges yourself before assigning; instruct students to note any character breaks in their reflection memo.</p>
                     </details>
                     <details class="risk-item">
                         <summary>Academic Integrity</summary>
@@ -267,7 +271,7 @@ Rubric categories: (A) Investment Thesis Clarity [1-5], (B) Valuation Methodolog
                     <h3>Evidence from the Repository</h3>
                     <details>
                         <summary>View evidence and supporting research</summary>
-                        <p>Greene (AACSB, 2025) documents structured feedback workflows in finance using the Skills/Replacement/Complement framework. Bowen &amp; Watson (2024, 2nd ed. 2025) provide detailed guidance on the write-first-then-AI-then-reflect pedagogical cycle. Abeysekera (2024) tested ChatGPT on financial accounting assessments, finding GPT-4 scored at the 90th percentile for introductory courses. Broader higher education literature consistently identifies AI feedback as a high-value, low-risk entry point for faculty adoption (Lo, 2023).</p>
+                        <p>Greene (AACSB, 2025) documents structured feedback workflows in finance using the Skills/Replacement/Complement framework. Bowen &amp; Watson (2024, 2nd ed. 2025) provide detailed guidance on the write-first-then-AI-then-reflect pedagogical cycle. Abeysekera (2024) tested ChatGPT on financial accounting assessments, finding GPT-4 scored at the 90th percentile for introductory courses — meaning AI feedback quality benchmarks well against expert human review for foundational content. Broader higher education literature consistently identifies AI feedback as a high-value, low-risk entry point for faculty adoption.</p>
                     </details>
 
                     <h3>Risks and Safeguards</h3>
@@ -276,8 +280,8 @@ Rubric categories: (A) Investment Thesis Clarity [1-5], (B) Valuation Methodolog
                         <p>Over-reliance on AI feedback may weaken the mentor-student relationship. Mitigation: always add at least one personal, human-only comment per submission.</p>
                     </details>
                     <details class="risk-item">
-                        <summary>Domain Blind Spots</summary>
-                        <p>AI may miss finance-specific issues (e.g., an unreasonable terminal growth rate that sounds plausible). Mitigation: faculty must review all AI-generated feedback before returning it.</p>
+                        <summary>Finance Domain Blind Spots</summary>
+                        <p>AI misses finance-specific errors that sound plausible on the surface. Examples: a terminal growth rate of 4% flagged as "reasonable" without noting it exceeds long-run nominal GDP growth; an equity risk premium of 8% accepted without questioning whether it reflects current market conditions; or a WACC calculated correctly but applied to a project with a very different risk profile than the firm. Mitigation: faculty must review all AI-generated feedback before returning it, particularly the valuation and methodology sections.</p>
                     </details>
                     <details class="risk-item">
                         <summary>Gaming</summary>
@@ -377,7 +381,8 @@ Rubric categories: (A) Investment Thesis Clarity [1-5], (B) Valuation Methodolog
                     <h3>Evidence from the Repository</h3>
                     <details>
                         <summary>View evidence and supporting research</summary>
-                        <p>HBS deployed custom AI tutor bots (FRC Bot) with 75% student adoption and highly positive feedback. UT Austin&rsquo;s UT Sage project uses RAG-based AI tutors grounded in specific course materials. The Cogent Education SIUAIT study (2024, ~1,400 finance students across 3 semesters) found students perceived AI tools as essential for enhancing learning. A Harvard study on AI tutors in physics found students learned more than twice as much in less time compared to traditional methods.</p>
+                        <p>HBS deployed custom AI tutor bots (FRC Bot) with 75% student adoption and highly positive feedback. UT Austin&rsquo;s UT Sage project uses RAG-based AI tutors grounded in specific course materials. The Cogent Education SIUAIT study (2024, ~1,400 finance students across 3 semesters) found students perceived AI tools as essential for enhancing learning. Kestin et al. (2024, PNAS) found that AI-based Socratic tutoring produced twice the learning gains as traditional active learning in physics — the same scaffolding mechanism (guided questioning rather than answer-giving) applies directly to TVM, WACC, and bond pricing concept-building in finance.</p>
+                        <p><strong>Important verification note:</strong> AI tutors have been observed producing incorrect multi-step WACC calculations with convincingly formatted intermediate steps. Always require students to verify final answers against textbook formulas or a financial calculator before concluding the session.</p>
                     </details>
 
                     <h3>Risks and Safeguards</h3>
@@ -462,6 +467,7 @@ Rubric categories: (A) Investment Thesis Clarity [1-5], (B) Valuation Methodolog
 
                     <h3>Assessment Approach</h3>
                     <p>Rubric: Computation accuracy (20%), Assumption justification quality (25%), Interpretation of results in business context (25%), AI critique and disclosure quality (15%), Oral defense performance (15%). Publish the rubric in advance so students understand that explanation and interpretation carry more weight than getting the number right.</p>
+                    <p><strong>Grade-band guidance — Assumption Justification (25%):</strong> Full credit requires the student to explain why their specific discount rate reflects <em>this</em> company's risk profile, not just the industry average — e.g., citing the firm's leverage ratio, recent earnings volatility, or credit rating. Partial credit if the student states assumptions but offers no justification. Minimal credit if assumptions are asserted without any business rationale. The oral check-in for large sections can be conducted asynchronously: a 90-second video submission where the student walks through their two most consequential assumptions works well as an alternative to synchronous meetings.</p>
 
                     <h3>Skills Developed</h3>
                     <div class="skills-grid">
@@ -605,6 +611,10 @@ Rubric categories: (A) Investment Thesis Clarity [1-5], (B) Valuation Methodolog
                         <p>Students may trust AI-generated statistics without understanding underlying assumptions. Mitigation: require explicit statement of statistical assumptions.</p>
                     </details>
                     <details class="risk-item">
+                        <summary>Finance-Specific Data Quality Issues</summary>
+                        <p>AI-generated code will not automatically handle three critical data quality problems in finance: (1) <strong>Survivorship bias</strong> — historical stock databases often exclude companies that went bankrupt or were delisted, overstating average returns; (2) <strong>Look-ahead bias</strong> — using data in a backtest that would not have been available at the time of the trading decision; (3) <strong>Split-adjusted prices</strong> — raw historical prices are not adjusted for stock splits, making return calculations incorrect without adjustment. Faculty should flag all three before assigning any historical data analysis.</p>
+                    </details>
+                    <details class="risk-item">
                         <summary>Economically Meaningless Results</summary>
                         <p>AI can produce statistically significant but financially nonsensical outputs. Mitigation: every analysis must include a &lsquo;so what?&rsquo; interpretation tied to a financial decision.</p>
                     </details>
@@ -614,12 +624,12 @@ Rubric categories: (A) Investment Thesis Clarity [1-5], (B) Valuation Methodolog
                     </details>
                     <details class="risk-item">
                         <summary>Proprietary Data</summary>
-                        <p>Do not upload restricted or proprietary firm data. Mitigation: use publicly available datasets only.</p>
+                        <p>Do not upload restricted or proprietary firm data. Mitigation: use publicly available datasets only. Free data sources: <a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html" target="_blank" rel="noopener">Kenneth French Data Library</a> (factor returns, portfolio sorts), Yahoo Finance via the <code>yfinance</code> Python library (adjusted close prices), and <a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a> (macroeconomic series, interest rates, yield curves).</p>
                     </details>
 
                     <aside class="pilot-box">
                         <h3>First-Week Implementation Pilot</h3>
-                        <p>Download a free CSV of monthly Fama-French factor returns from Kenneth French&rsquo;s data library (mba.tuck.dartmouth.edu). Upload it to ChatGPT Code Interpreter with this prompt: &lsquo;Calculate the average monthly return and standard deviation for the market factor, SMB, and HML. Display as a bar chart with error bars.&rsquo; Show the result in class (takes 30 seconds). Ask students: &lsquo;What would you need to check to trust these numbers?&rsquo; Debrief in 3 minutes. No coding knowledge required.</p>
+                        <p>Download a free CSV of monthly Fama-French factor returns from <a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html" target="_blank" rel="noopener">Kenneth French&rsquo;s data library</a>. Upload it to ChatGPT Code Interpreter with this prompt: &lsquo;Calculate the average monthly return and standard deviation for the market factor, SMB, and HML. Display as a bar chart with error bars.&rsquo; Show the result in class (takes 30 seconds). Ask students: &lsquo;What would you need to check to trust these numbers?&rsquo; Debrief in 3 minutes. No coding knowledge required.</p>
                     </aside>
 
                     <nav class="app-nav" aria-label="Application navigation">
@@ -819,7 +829,7 @@ Rubric categories: (A) Investment Thesis Clarity [1-5], (B) Valuation Methodolog
                     </details>
                     <details class="risk-item">
                         <summary>Paywalled Data</summary>
-                        <p>AI cannot access Bloomberg, Refinitiv, or S&amp;P Capital IQ. Mitigation: direct students to free sources (SEC EDGAR, Yahoo Finance).</p>
+                        <p>AI with web search cannot access Bloomberg, Refinitiv, S&amp;P Capital IQ, or paywalled analyst reports — the very sources finance professionals rely on most. Limit student source requirements to publicly available documents: SEC filings via <a href="https://www.sec.gov/edgar" target="_blank" rel="noopener">EDGAR</a>, earnings call transcripts (Seeking Alpha free tier), official company press releases, and Federal Reserve data via <a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a>. State this constraint explicitly in the assignment so students don't feel they are missing required resources.</p>
                     </details>
                     <details class="risk-item">
                         <summary>AI as &lsquo;Source&rsquo;</summary>
@@ -921,7 +931,7 @@ Rubric categories: (A) Investment Thesis Clarity [1-5], (B) Valuation Methodolog
                     <h3>Risks and Safeguards</h3>
                     <details class="risk-item">
                         <summary>Financial Logic Errors in AI Code</summary>
-                        <p>AI may calculate returns using price levels instead of log returns, mishandle ex-dividend dates, apply wrong sign conventions. Mitigation: require line-by-line annotations; include a &lsquo;break it&rsquo; exercise.</p>
+                        <p>AI may calculate returns using price levels instead of log returns, mishandle ex-dividend dates, apply wrong sign conventions. <strong>Sign convention errors are especially common in finance code</strong>: AI frequently treats cash outflows as positive when they should be negative (or vice versa), producing DCF values with the wrong sign or NPV calculations that recommend rejection when the project is actually positive. Mitigation: require students to manually verify the sign and unit of at least one cash flow in their annotated code; include a "break it" exercise where students deliberately flip a sign and explain what the incorrect output would imply.</p>
                     </details>
                     <details class="risk-item">
                         <summary>Copy-Paste Without Understanding</summary>
@@ -1004,6 +1014,7 @@ Rubric categories: (A) Investment Thesis Clarity [1-5], (B) Valuation Methodolog
                         </div>
                         <pre><code id="prompt-9-cross">Ask ChatGPT, Claude, and Gemini: 'What was the S&P 500 total return in 2024? Break down the return into price appreciation and dividend yield.' Compare the three responses for accuracy, specificity, source citation, and confidence level. Which platform hedges most appropriately?</code></pre>
                     </div>
+                    <p><small><strong>Instructor note:</strong> Different AI models have different training data cutoffs. Before this exercise, ask each model "What is your knowledge cutoff date?" and have students record the answer. Discrepancies in S&amp;P 500 return figures may reflect cutoff differences rather than reasoning errors — distinguishing between these two explanations is itself a valuable critical thinking exercise.</small></p>
 
                     <h3>Assessment Approach</h3>
                     <p>AI Reliability Report graded on: thoroughness of error identification (30%), accuracy and specificity of error categorization (25%), quality of actionable recommendations for professional AI use (25%), depth of cross-platform comparison insights (20%).</p>
@@ -1114,6 +1125,7 @@ Rubric categories: (A) Investment Thesis Clarity [1-5], (B) Valuation Methodolog
 
                     <h3>Assessment Approach</h3>
                     <p>Rubric: Assumption quality and justification (25%), Code modification sophistication (20%), Output interpretation and memo quality (25%), Presentation and defense under Q&amp;A (20%), Verification against analytical solutions (10%).</p>
+                    <p><strong>Grade-band guidance — Assumption Quality (25%):</strong> Full credit requires citing a specific, verifiable data source for each key parameter — e.g., "I used a 10.5% equity mean return based on Ibbotson Associates' long-run historical series, available through Damodaran's data library." Partial credit for reasonable assumptions stated without sources. Minimal credit for assumptions asserted without justification ("I assumed 7% because that seemed reasonable"). The goal is to develop the professional discipline of defending every parameter choice with evidence.</p>
 
                     <h3>Skills Developed</h3>
                     <div class="skills-grid">
