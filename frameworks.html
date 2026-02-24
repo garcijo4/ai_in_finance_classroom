@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OECD Frameworks - AI in Finance Classroom</title>
+    <meta name="description" content="OECD-aligned evaluation framework and discipline-specific AI use policy matrix for finance classroom instruction.">
+    <meta property="og:title" content="OECD Frameworks - AI in Finance Classroom">
+    <meta property="og:description" content="OECD-aligned evaluation framework and discipline-specific AI use policy matrix for finance classroom instruction.">
+    <meta property="og:url" content="https://garcijo4.github.io/ai_in_finance_classroom/frameworks.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <style>
+        .framework-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+        .framework-table th, .framework-table td { padding: 0.75rem; border: 1px solid var(--pico-muted-border-color); text-align: left; vertical-align: top; }
+        .framework-table thead th { background: #2e75b6; color: #fff; font-weight: 600; position: sticky; top: 0; }
+        .framework-table tbody tr:nth-child(even) { background: var(--pico-card-background-color); }
+        .framework-table tbody tr:hover { outline: 2px solid #2e75b6; outline-offset: -2px; }
+        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.5rem 0; }
+        .appendix-note { font-style: italic; color: var(--pico-muted-color); margin: 1rem 0 2rem; }
+        .section-divider { border: none; border-top: 2px solid #2e75b6; margin: 3rem 0; }
+        .policy-prohibited { color: #c0392b; font-weight: 600; }
+        .policy-transparent { color: #d4a017; font-weight: 600; }
+        .policy-required { color: #27ae60; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <nav class="container">
+            <ul>
+                <li><a href="index.html" class="nav-brand"><strong>AI in Finance</strong></a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="prompts.html">Prompt Library</a></li>
+                <li><a href="quick-start.html">Quick Start</a></li>
+                <li><a href="frameworks.html" class="active">Frameworks</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+                        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>OECD-Aligned Frameworks</h1>
+                <p>A discipline-specific AI use policy matrix and evaluation framework aligned with the <a href="https://doi.org/10.1787/062a7394-en" target="_blank" rel="noopener">OECD Digital Education Outlook 2026</a>.</p>
+            </div>
+
+            <!-- Appendix A -->
+            <section class="section-padded" id="policy-matrix">
+                <h2>Appendix A: Discipline-Specific AI Use Policy Matrix</h2>
+                <p>OECD recommends discipline-specific AI policies that specify permitted, restricted, and prohibited uses at the assignment level rather than as a blanket course-level statement. The matrix below provides a starting framework for finance courses. Faculty should adapt it to their course context and publish it in the syllabus so students understand expectations before any assignment begins.</p>
+                <p>The progression from <span class="policy-prohibited">AI-Prohibited</span> to <span class="policy-transparent">AI-Transparent</span> to <span class="policy-required">AI-Required</span> mirrors the framework in <a href="applications.html#app-4">#4 of this guide</a> and aligns with OECD&rsquo;s recommendation that AI governance evolve alongside student and faculty competence.</p>
+
+                <div class="table-scroll">
+                    <table class="framework-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 18%;">Assignment Type</th>
+                                <th style="width: 27%;">AI-Prohibited</th>
+                                <th style="width: 27%;">AI-Transparent</th>
+                                <th style="width: 28%;">AI-Required</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>In-Class Exam / Quiz</strong></td>
+                                <td>All AI use prohibited. Proctored conditions. Foundational knowledge verification.</td>
+                                <td>N/A for in-class exams.</td>
+                                <td>N/A for in-class exams.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Written Case Analysis / Financial Plan</strong></td>
+                                <td>Draft must be written independently without AI. No AI grammar or idea assistance.</td>
+                                <td>AI permitted for revision feedback only. Full transcript required. Reflection memo required. Human instructor layer required.</td>
+                                <td>AI co-authoring permitted. Student grades the critique and process, not the AI output. Oral defense required.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Financial Modeling / Coding Assignment (<a href="applications.html#app-8">#8</a>)</strong></td>
+                                <td>AI-generated final code submission without annotation. Copying without understanding the financial logic.</td>
+                                <td>AI may generate code. Student must annotate every section with financial logic explanation. Transcript submitted. Oral walkthrough required.</td>
+                                <td>Capstone / advanced courses: AI as primary co-pilot. Student architects requirements, audits logic, interprets outputs, and defends decisions.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Monte Carlo / Simulation (<a href="applications.html#app-10">#10</a>)</strong></td>
+                                <td>Submitting AI-generated code or outputs without writing a specification document, annotating assumptions, or running sensitivity analysis.</td>
+                                <td>AI generates code from student specification. Student must run sensitivity analysis, interpret distribution outputs, and submit investment recommendation memo. Full transcript required.</td>
+                                <td>Risk Management / advanced courses: AI as simulation partner. Student designs the model logic, selects distributions, defends assumptions in Q&amp;A, and connects results to a real investment decision.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Role-Play / Oral Simulation (<a href="applications.html#app-1">#1</a>)</strong></td>
+                                <td>Submitting someone else&rsquo;s transcript or completing the interaction without genuine engagement. No transcript submitted.</td>
+                                <td>AI persona used. Transcript + reflection memo required. Flags moments where the bot broke character. Oral defense adds human verification layer.</td>
+                                <td>Student designs the AI persona, writes the system prompt, runs the simulation, critiques the bot&rsquo;s financial accuracy, and presents findings to the class.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="appendix-note">&ldquo;Prohibited&rdquo; refers to the specific use described, not a blanket prohibition on AI in the course. Faculty are encouraged to share this matrix with students on the first day and revisit it at each major assignment. Policies should evolve as both student AI competence and course-level evidence accumulate.</p>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- Appendix B -->
+            <section class="section-padded" id="evaluation-framework">
+                <h2>Appendix B: OECD-Aligned Evaluation Framework</h2>
+                <p>OECD&rsquo;s Digital Education Outlook 2026 recommends that for each AI application, institutions specify: (1) the intended learning outcome, (2) the most likely unintended consequence, and (3) how both will be measured across five dimensions&mdash;performance, retention, engagement, equity, and instructor workload. The framework below applies this logic to each of the 10 finance applications.</p>
+                <p>Faculty are encouraged to select one or two applications to evaluate formally in the first semester of adoption and share findings with colleagues.</p>
+
+                <div class="table-scroll">
+                    <table class="framework-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 12%;">Application</th>
+                                <th style="width: 22%;">Intended Outcome</th>
+                                <th style="width: 22%;">Likely Unintended Consequence</th>
+                                <th style="width: 24%;">How to Measure</th>
+                                <th style="width: 20%;">Equity Check</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong><a href="applications.html#app-1">#1 Role-Play</a></strong></td>
+                                <td>Improved professional communication and analytical defense under pressure</td>
+                                <td>Surface-level interaction without genuine engagement; transcript padding</td>
+                                <td>Pre/post oral defense scores; rubric score distribution; reflection quality ratings</td>
+                                <td>Do students with speech anxiety or non-native English engage equitably? Offer written alternative.</td>
+                            </tr>
+                            <tr>
+                                <td><strong><a href="applications.html#app-2">#2 AI Feedback</a></strong></td>
+                                <td>Faster feedback cycles; stronger revision quality; feedback literacy</td>
+                                <td>Over-reliance on AI critique; depersonalization of instructor relationship</td>
+                                <td>Compare pre/post rubric scores on revision quality; measure acceptance/rejection rationale quality</td>
+                                <td>Do ESL students or first-gen students trust AI feedback differently? Survey and compare.</td>
+                            </tr>
+                            <tr>
+                                <td><strong><a href="applications.html#app-3">#3 Socratic Tutor</a></strong></td>
+                                <td>Reduced knowledge gaps on foundational concepts; increased office hours independence</td>
+                                <td>Students stop attempting problems independently before engaging AI</td>
+                                <td>AI-free quiz scores before and after adoption; verification log completion rates</td>
+                                <td>Do lower-GPA students benefit as much as higher-GPA students? Track by subgroup.</td>
+                            </tr>
+                            <tr>
+                                <td><strong><a href="applications.html#app-4">#4 Process Assessment</a></strong></td>
+                                <td>Assessment validity in AI era; higher-order reasoning on display</td>
+                                <td>Student perception of subjectivity; oral check-in burden on faculty</td>
+                                <td>Compare oral check-in performance with written submission scores; track grade distribution equity</td>
+                                <td>Do oral assessments disadvantage non-native English speakers? Offer optional written equivalent.</td>
+                            </tr>
+                            <tr>
+                                <td><strong><a href="applications.html#app-5">#5 Data Analysis</a></strong></td>
+                                <td>Data literacy without coding bottleneck; interpretation over syntax</td>
+                                <td>False confidence in AI-verified statistics; shallow interpretation memos</td>
+                                <td>Manual verification checklist accuracy; &ldquo;so what?&rdquo; memo quality ratings; exam performance on interpretation questions</td>
+                                <td>Do students without prior coding exposure benefit more? Track by major/background.</td>
+                            </tr>
+                            <tr>
+                                <td><strong><a href="applications.html#app-6">#6 Content Generation</a></strong></td>
+                                <td>Faculty time savings; fresher, more varied assessment materials</td>
+                                <td>Curricular homogenization; AI fabricated financial data enters course materials</td>
+                                <td>Faculty time-savings log; student assessment score variance across variants; diversity audit of generated cases</td>
+                                <td>Are generated cases representative across firm size, geography, and industry? Run diversity check each semester.</td>
+                            </tr>
+                            <tr>
+                                <td><strong><a href="applications.html#app-7">#7 Case Updates</a></strong></td>
+                                <td>Current-events integration; verification habits; analyst mindset</td>
+                                <td>Hallucinated market data; AI as citable source; paywalled data access gaps</td>
+                                <td>Source citation quality; verification accuracy; student performance on identifying material vs. noise</td>
+                                <td>Do students without Bloomberg/Refinitiv access face barriers? Ensure free-source alternatives are sufficient.</td>
+                            </tr>
+                            <tr>
+                                <td><strong><a href="applications.html#app-8">#8 Vibe Coding</a></strong></td>
+                                <td>Quantitative finance access for non-CS students; code-as-communication skill</td>
+                                <td>Annotation without understanding; AI-generated financial logic errors go undetected</td>
+                                <td>Annotation quality scores; oral walkthrough performance; &ldquo;break it&rdquo; exercise accuracy</td>
+                                <td>Do students without prior programming background close the gap? Track by CS background.</td>
+                            </tr>
+                            <tr>
+                                <td><strong><a href="applications.html#app-9">#9 AI Literacy</a></strong></td>
+                                <td>Professional skepticism; verification habits; AI evaluation methodology</td>
+                                <td>Cynicism about AI; failure to transfer audit methodology to new tools</td>
+                                <td>Error identification accuracy; cross-platform comparison depth; professional recommendation quality</td>
+                                <td>Do students from different majors/backgrounds show different AI literacy gaps? Survey by subgroup.</td>
+                            </tr>
+                            <tr>
+                                <td><strong><a href="applications.html#app-10">#10 Simulation</a></strong></td>
+                                <td>Distributional thinking; decision-making under uncertainty; model-building intuition</td>
+                                <td>Code generation without engagement; assumption selection without theoretical grounding</td>
+                                <td>Specification document quality; sensitivity analysis depth; investment memo recommendations; oral Q&amp;A scores</td>
+                                <td>Do students without strong quantitative backgrounds close the gap with AI assistance? Track pre/post.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Measurement Guidance</h3>
+                <dl class="deployment-dl">
+                    <dt>Performance</dt>
+                    <dd>Rubric scores and exam results.</dd>
+                    <dt>Retention</dt>
+                    <dd>AI-free assessment scores 4&ndash;8 weeks after adoption.</dd>
+                    <dt>Engagement</dt>
+                    <dd>Dialogue log depth, reflection quality, participation rates.</dd>
+                    <dt>Equity</dt>
+                    <dd>Score distributions by subgroup (GPA, language background, major).</dd>
+                    <dt>Workload</dt>
+                    <dd>Faculty time-per-student on grading and feedback tasks.</dd>
+                </dl>
+                <p class="appendix-note">Start with one application and one dimension. Build the evidence base incrementally.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 John Garcia, California Lutheran University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>.</p>
+            <p>Southwestern Finance Association Annual Meeting &middot; March 2026</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
