@@ -109,6 +109,11 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--color-pilot-bg);
 }
 
+.site-header nav ul li a.active {
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: calc(0.5rem - 2px);
+}
+
 [data-theme="dark"] .site-header nav ul li a:hover,
 [data-theme="dark"] .site-header nav ul li a.active {
     background: rgba(255, 255, 255, 0.08);
@@ -149,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
     --pico-h1-color: #ffffff;
     --pico-h2-color: #ffffff;
     --pico-h3-color: #ffffff;
+    box-shadow: 0 8px 32px rgba(26, 35, 50, 0.18);
 }
 
 [data-theme="dark"] .hero {
@@ -316,13 +322,14 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.75rem;
     text-decoration: none;
     color: inherit;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
     align-items: flex-start;
 }
 
 .ranking-card:hover {
     border-color: var(--color-accent);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.15);
+    transform: translateY(-2px);
 }
 
 .ranking-card.hidden {
@@ -895,6 +902,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem 1.5rem;
     border-top: 1px solid var(--color-border);
     margin-top: 3rem;
+    background: var(--color-code-bg);
 }
 
 .site-footer p {
@@ -905,9 +913,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Page Header (non-hero pages) ===== */
 .page-header {
-    padding: 3rem 0 2rem;
+    padding: 2rem 0 1rem;
     border-bottom: 1px solid var(--color-border);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .page-header h1 {
